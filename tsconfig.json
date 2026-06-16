@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable",
+      "webworker"
+    ],
+    "moduleDetection": "force",
+    "useDefineForClassFields": true,
+    "module": "es2022",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "kumphouse": ["./packages/kumphouse/src"],
+      "@kumphouse/client": ["./packages/client/src"],
+      "@kumphouse/cli": ["./packages/cli/src"],
+      "@kumphouse/core": ["./packages/core/src"],
+      "@kumphouse/server": ["./packages/server/src"],
+      "@kumphouse/nuxt": ["./integrations/nuxt/src"],
+      "@kumphouse/vite": ["./integrations/vite/src"],
+      "@kumphouse/webpack": ["./integrations/webpack/src"]
+    },
+    "resolveJsonModule": true,
+    "types": [],
+    "allowJs": true,
+    "maxNodeModuleJsDepth": 200,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "**/dist/**",
+    "**/.kumphouse/**",
+    "**/node_modules/**"
+  ]
+}

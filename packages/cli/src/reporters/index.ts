@@ -1,0 +1,55 @@
+import type { ResolvedUserConfig, KumphouseRouteReport } from '@kumphouse/core'
+import type { ReporterConfig, ReportJsonExpanded, ReportJsonSimple } from './types'
+import { writeFile } from 'node:fs/promises'
+import { join } from 'node:path'
+import { reportCSVExpanded } from './csvExpanded'
+import { reportCSVSimple } from './csvSimple'
+import { reportJsonExpanded } from './jsonExpanded'
+import { reportJsonSimple } from './jsonSimple'
+import { reportLighthouseServer } from './lighthouseServer'
+
+export function generateReportPayload(reporter: 'lighthouseServer', reports: KumphouseRouteReport[], config?: ReporterConfig): Promise<void>
+export function generateReportPayload(reporter: 'jsonExpanded', reports: KumphouseRouteReport[]): ReportJsonExpanded
+export function generateReportPayload(reporter: 'jsonSimple' | 'json', reports: KumphouseRouteReport[]): ReportJsonSimple
+export function generateReportPayload(reporter: 'csvSimple' | 'csv', reports: KumphouseRouteReport[]): string
+export function generateReportPayload(reporter: 'csvExpanded', reports: KumphouseRouteReport[], config?: ReporterConfig): string
+export function generateReportPayload(reporter: string, _reports: KumphouseRouteReport[], config?: ReporterConfig): any {
+  const reports = _reports
+    .sort((a, b) => a.route.path.localeCompare(b.route.path))
+    .filter((r) => {
+      if (!r.report?.categories)
+        return false
+      return r.report.audits
+    })
+
+  if (reporter.startsWith('json')) {
+    if (reporter === 'jsonSimple' || reporter === 'json')
+      return reportJsonSimple(reports)
+    if (reporter === 'jsonExpanded')
+      return reportJsonExpanded(reports)
+  }
+  if (reporter.startsWith('csv')) {
+    if (reporter === 'csvSimple' || reporter === 'csv')
+      return reportCSVSimple(reports)
+    if (reporter === 'csvExpanded')
+      return reportCSVExpanded(reports, config)
+  }
+  if (reporter === 'lighthouseServer')
+    return reportLighthouseServer(reports, config)
+
+  throw new Error(`Unsupported reporter: ${reporter}.`)
+}
+
+export async function outputReport(reporter: string, config: Partial<ResolvedUserConfig>, payload: any) {
+  if (reporter.startsWith('json')) {
+    const path = join(config.outputPath, 'ci-result.json')
+    await writeFile(path, JSON.stringify(payload, null, 2))
+    return path
+  }
+  if (reporter.startsWith('csv')) {
+    const path = join(config.outputPath, 'ci-result.csv')
+    await writeFile(path, payload)
+    return path
+  }
+  throw new Error(`Unsupported reporter: ${reporter}.`)
+}

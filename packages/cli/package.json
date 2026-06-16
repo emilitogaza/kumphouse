@@ -1,0 +1,61 @@
+{
+  "name": "@kumphouse/cli",
+  "type": "module",
+  "version": "0.17.9",
+  "description": "CLI for Kumphouse",
+  "license": "MIT",
+  "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harlan-zw/unlighthouse.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/harlan-zw/unlighthouse/issues"
+  },
+  "keywords": [
+    "lighthouse",
+    "audit",
+    "seo",
+    "performance",
+    "cli",
+    "kumphouse"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/cli.mjs"
+    },
+    "./ci": {
+      "import": "./dist/ci.mjs"
+    }
+  },
+  "main": "dist/cli.mjs",
+  "module": "dist/cli.mjs",
+  "bin": {
+    "kumphouse-ci": "bin/kumphouse-ci.mjs"
+  },
+  "files": [
+    "*.d.ts",
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "obuild",
+    "stub": "obuild --stub"
+  },
+  "dependencies": {
+    "@lhci/utils": "catalog:dependencies",
+    "@kumphouse/client": "workspace:*",
+    "@kumphouse/core": "workspace:*",
+    "@kumphouse/server": "workspace:*",
+    "cac": "catalog:dependencies",
+    "consola": "catalog:dependencies",
+    "defu": "catalog:dependencies",
+    "lodash-es": "catalog:dependencies",
+    "pathe": "catalog:dependencies",
+    "std-env": "catalog:dependencies",
+    "tinyexec": "catalog:dependencies",
+    "tinyglobby": "catalog:dependencies"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "kumphouse",
+  "type": "module",
+  "version": "0.17.9",
+  "description": "Kumphouse — Kumpan's playful, in-house Lighthouse sweeper. Scan your entire site for performance, accessibility and SEO problems worth solving.",
+  "license": "MIT",
+  "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harlan-zw/unlighthouse.git",
+    "directory": "packages/kumphouse"
+  },
+  "bugs": {
+    "url": "https://github.com/harlan-zw/unlighthouse/issues"
+  },
+  "keywords": [
+    "lighthouse",
+    "audit",
+    "seo",
+    "performance",
+    "speed"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./types.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./config": {
+      "types": {
+        "import": "./config.d.mts",
+        "default": "./config.d.ts"
+      },
+      "import": "./config.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./types.d.ts",
+  "bin": {
+    "kumphouse": "bin/kumphouse.mjs",
+    "kumphouse-ci": "bin/kumphouse-ci.mjs"
+  },
+  "files": [
+    "config.d.mts",
+    "config.d.ts",
+    "config.mjs",
+    "dist",
+    "types.d.mts",
+    "types.d.ts"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "obuild",
+    "stub": "obuild --stub",
+    "test:attw": "attw --pack"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@kumphouse/cli": "workspace:*",
+    "@kumphouse/client": "workspace:*",
+    "@kumphouse/core": "workspace:*"
+  }
+}
