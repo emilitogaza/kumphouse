@@ -1,4 +1,4 @@
-# @kumphouse/cli
+# kumphouse-cli
 
 The command-line interface and CI integration for [Kumphouse](https://github.com/harlan-zw/unlighthouse), enabling automated website scanning in development and deployment workflows.
 
@@ -9,7 +9,7 @@ The command-line interface and CI integration for [Kumphouse](https://github.com
 npx kumphouse --site https://example.com
 
 # Or install globally
-npm install -g @kumphouse/cli
+npm install -g kumphouse-cli
 ```
 
 ## Usage

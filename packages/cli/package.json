@@ -1,7 +1,7 @@
 {
-  "name": "@kumphouse/cli",
+  "name": "kumphouse-cli",
   "type": "module",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "CLI for Kumphouse",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
@@ -46,9 +46,9 @@
   },
   "dependencies": {
     "@lhci/utils": "catalog:dependencies",
-    "@kumphouse/client": "workspace:*",
-    "@kumphouse/core": "workspace:*",
-    "@kumphouse/server": "workspace:*",
+    "kumphouse-client": "workspace:*",
+    "kumphouse-core": "workspace:*",
+    "kumphouse-server": "workspace:*",
     "cac": "catalog:dependencies",
     "consola": "catalog:dependencies",
     "defu": "catalog:dependencies",

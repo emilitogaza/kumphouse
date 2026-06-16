@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseColumn, KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseColumn, KumphouseRouteReport } from 'kumphouse-core'
 import { extractBgColor, extractFgColor } from '../../logic'
 
 defineProps<{

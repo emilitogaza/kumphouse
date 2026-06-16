@@ -1,4 +1,4 @@
-import { useKumphouse } from '@kumphouse/core'
+import { useKumphouse } from 'kumphouse-core'
 import { createApp, toNodeListener } from 'h3'
 import { listen } from 'listhen'
 

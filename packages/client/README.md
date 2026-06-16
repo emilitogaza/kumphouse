@@ -1,4 +1,4 @@
-# @kumphouse/client
+# kumphouse-client
 
 The Vue-based user interface for [Kumphouse](https://github.com/harlan-zw/unlighthouse), providing an interactive dashboard to view and analyze Lighthouse scan results.
 

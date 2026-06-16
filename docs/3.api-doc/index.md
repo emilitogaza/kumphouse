@@ -23,7 +23,7 @@ Programmatic API for building custom integrations and extending Kumphouse functi
 
 ## Core Package
 
-Functions from `@kumphouse/core`:
+Functions from `kumphouse-core`:
 
 ### `createKumphouse()`{lang="ts"}
 
@@ -34,7 +34,7 @@ Functions from `@kumphouse/core`:
   When no provider is given, a default provider is created which will try and resolve route definitions and URLs.
 
   ```ts
-  import { createKumphouse } from '@kumphouse/core'
+  import { createKumphouse } from 'kumphouse-core'
 
   createKumphouse(
     // config
@@ -69,12 +69,12 @@ Functions from `@kumphouse/core`:
 
 - **Type:** `(options: GenerateClientOptions) => Promise<void>`{lang="ts"}
 
-  This copies over the client from `@kumphouse/ui` to be used to render our scans details.
+  This copies over the client from `kumphouse-ui` to be used to render our scans details.
 
   It's publicly exposed to provide a tight integrations for custom client builds, such as the CI build.
 
   ```ts
-  import { generateClient } from '@kumphouse/core'
+  import { generateClient } from 'kumphouse-core'
 
   // ...
   logger.info('Generating static client.')
@@ -90,7 +90,7 @@ Functions from `@kumphouse/core`:
   which is great to avoid transferring state between your logic.
 
   ```ts
-  import { useKumphouse } from '@kumphouse/core'
+  import { useKumphouse } from 'kumphouse-core'
 
   // access the lighthouse context, pick out the worker
   const { worker } = useKumphouse()
@@ -106,7 +106,7 @@ Functions from `@kumphouse/core`:
   `debug` config.
 
   ```ts
-  import { useLogger } from '@kumphouse/core'
+  import { useLogger } from 'kumphouse-core'
 
   // you need to instantiate the logger to get the instance
   const logger = useLogger()
@@ -114,9 +114,9 @@ Functions from `@kumphouse/core`:
   logger.debug('Something weird has happened')
   ```
 
-## @kumphouse/server
+## kumphouse-server
 
-Functions exposed from the `@kumphouse/server` package.
+Functions exposed from the `kumphouse-server` package.
 
 This package is used for instances where kumphouse is running without a provider which has an accessible web server. For instance
 running Kumphouse with the `cli` provider will use this package.
@@ -129,7 +129,7 @@ running Kumphouse with the `cli` provider will use this package.
   This is used to host the API and the client.
 
   ```ts
-  import { createServer } from '@kumphouse/server'
+  import { createServer } from 'kumphouse-server'
 
   // ...
   const { server, app } = await createServer()
@@ -177,7 +177,7 @@ export type HookResult = Promise<void> | void
 ```
 
 ```ts
-import { useKumphouse } from '@kumphouse/core'
+import { useKumphouse } from 'kumphouse-core'
 
 const { hooks } = useKumphouse()
 
@@ -223,7 +223,7 @@ hooks.hook('task-complete', (path, response) => {
 
 - **Type:** `() => HookResult`{lang="ts"}
 
-  Called when a user visits the path of the `@kumphouse/ui` for the first time. Useful for starting the worker on-demand.
+  Called when a user visits the path of the `kumphouse-ui` for the first time. Useful for starting the worker on-demand.
 
   ```ts
   // only start when the user wants to see the client

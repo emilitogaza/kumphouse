@@ -25,7 +25,7 @@ const favIcon = computed(() => {
       <img :src="basePath && basePath !== '/' ? `${basePath}assets/logo-dark.svg` : 'assets/logo-dark.svg'" height="24" width="24" class="w-[24px] h-[24px] mr-2 block dark:hidden" alt="Kumphouse logo">
       <div class="flex flex-col">
         <span class="dark:text-[#D0CEFB]">Kumphouse</span>
-        <span class="text-xs text-gray-500 dark:text-gray-400 font-normal">v{{ version }} · by Kumpan</span>
+        <span class="text-xs text-gray-500 dark:text-gray-400 font-normal">v{{ version }} · by Emilito</span>
       </div>
     </a>
     <div class="flex w-full justify-between items-center text-xs md:ml-5 md:mr-10">

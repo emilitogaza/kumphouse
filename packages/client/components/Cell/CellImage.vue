@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseColumn, KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseColumn, KumphouseRouteReport } from 'kumphouse-core'
 import { $URL, withBase } from 'ufo'
 import { contentModalOpen, isOffline, openContentModal, website } from '../../logic'
 

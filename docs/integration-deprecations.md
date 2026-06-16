@@ -19,9 +19,9 @@ relatedPages:
 
 The following build tool integrations are deprecated and will be removed in v1.0:
 
-- `@kumphouse/nuxt`
-- `@kumphouse/vite`
-- `@kumphouse/webpack`
+- `kumphouse-nuxt`
+- `kumphouse-vite`
+- `kumphouse-webpack`
 
 ::warning
 Start migrating to [CLI](/integrations/cli) or [CI](/integrations/ci) integrations for continued support.
@@ -47,9 +47,9 @@ In nearly all raised issues related to integration, they weren't needed and the 
 
 You should remove any of the following packages from your project.
 
-- `@kumphouse/nuxt`
-- `@kumphouse/vite`
-- `@kumphouse/webpack`
+- `kumphouse-nuxt`
+- `kumphouse-vite`
+- `kumphouse-webpack`
 
 Instead, you should simply use the CLI.
 

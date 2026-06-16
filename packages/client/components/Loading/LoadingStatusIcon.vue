@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseTaskStatus } from '@kumphouse/core'
+import type { KumphouseTaskStatus } from 'kumphouse-core'
 import { isOffline } from '../../logic'
 
 const props = defineProps<{

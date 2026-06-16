@@ -1,4 +1,4 @@
-import type { UserConfig } from '@kumphouse/core'
+import type { UserConfig } from 'kumphouse-core'
 
 export * from './dist/index.mjs'
 

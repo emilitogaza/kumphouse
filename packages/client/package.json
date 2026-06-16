@@ -1,7 +1,7 @@
 {
-  "name": "@kumphouse/client",
+  "name": "kumphouse-client",
   "type": "module",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "UI Client for Kumphouse.",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
@@ -52,7 +52,7 @@
     "@iconify-json/mdi": "catalog:dependencies",
     "@iconify-json/simple-line-icons": "catalog:dependencies",
     "@types/three": "catalog:",
-    "@kumphouse/core": "workspace:*",
+    "kumphouse-core": "workspace:*",
     "@vitejs/plugin-vue": "catalog:",
     "@vue/compiler-sfc": "catalog:",
     "@vueuse/core": "catalog:dependencies",

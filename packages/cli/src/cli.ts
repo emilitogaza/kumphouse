@@ -1,8 +1,8 @@
 import type { CliOptions } from './types'
 import { setMaxListeners } from 'node:events'
 import { platform } from 'node:os'
-import { createKumphouse, generateClient, useLogger } from '@kumphouse/core'
-import { createServer } from '@kumphouse/server'
+import { createKumphouse, generateClient, useLogger } from 'kumphouse-core'
+import { createServer } from 'kumphouse-server'
 import { x } from 'tinyexec'
 import createCli from './createCli'
 import { pickOptions, validateHost, validateOptions } from './util'
@@ -18,7 +18,11 @@ function openUrl(url: string) {
 
 const cli = createCli()
 
-const { options } = cli.parse() as unknown as { options: CliOptions }
+const { args, options } = cli.parse() as unknown as { args: string[], options: CliOptions }
+
+// Allow the site to be passed as a positional arg: `kumphouse kumpan.se`
+if (!options.site && args[0])
+  options.site = args[0]
 
 async function run() {
   const start = new Date()

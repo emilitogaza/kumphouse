@@ -26,7 +26,7 @@ Docker support is community-maintained and experimental. Use the CI integration 
 
 ## Kumphouse Config
 
-It's recommended you only use the `@kumphouse/ci` with Docker. Hosting the client does not have known support.
+It's recommended you only use the `kumphouse-ci` with Docker. Hosting the client does not have known support.
 
 You will need to remove the Chrome sandbox in a Docker environment, this will require using an `kumphouse.config.ts` file.
 

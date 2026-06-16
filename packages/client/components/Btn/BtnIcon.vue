@@ -16,7 +16,7 @@ export default {
     :href="href"
     class="inline-block cursor-pointer select-none outline-none!
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600 h-[1.2em] hover:no-underline no-underline"
+    hover:opacity-100 hover:text-purple-600 h-[1.2em] hover:no-underline no-underline"
   >
     <slot />
   </a>
@@ -25,7 +25,7 @@ export default {
     v-bind="$attrs"
     class="inline-block cursor-pointer select-none outline-none!
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600 h-[1.2em] hover:no-underline no-underline"
+    hover:opacity-100 hover:text-purple-600 h-[1.2em] hover:no-underline no-underline"
   >
     <slot />
   </button>

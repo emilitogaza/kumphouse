@@ -3,7 +3,7 @@ import os from 'node:os'
 import { Cluster } from 'puppeteer-cluster'
 
 export const AppName = 'Kumphouse'
-export const ClientPkg = '@kumphouse/client'
+export const ClientPkg = 'kumphouse-client'
 export const DefaultModuleRouterPrefix = '/__kumphouse'
 export const TagLine = 'Scan your entire website with Google Lighthouse.'
 

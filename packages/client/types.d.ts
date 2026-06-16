@@ -1,4 +1,4 @@
-import type { ClientOptionsPayload, ScanMeta, KumphouseRouteReport } from '@kumphouse/core'
+import type { ClientOptionsPayload, ScanMeta, KumphouseRouteReport } from 'kumphouse-core'
 
 declare global {
   interface Window {

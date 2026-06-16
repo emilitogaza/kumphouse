@@ -1,8 +1,8 @@
 {
   "name": "kumphouse",
   "type": "module",
-  "version": "0.17.9",
-  "description": "Kumphouse — Kumpan's playful, in-house Lighthouse sweeper. Scan your entire site for performance, accessibility and SEO problems worth solving.",
+  "version": "0.17.10",
+  "description": "Kumphouse \u2014 Kumpan's playful, in-house Lighthouse sweeper. Scan your entire site for performance, accessibility and SEO problems worth solving.",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
   "repository": {
@@ -66,8 +66,8 @@
     }
   },
   "dependencies": {
-    "@kumphouse/cli": "workspace:*",
-    "@kumphouse/client": "workspace:*",
-    "@kumphouse/core": "workspace:*"
+    "kumphouse-cli": "workspace:*",
+    "kumphouse-client": "workspace:*",
+    "kumphouse-core": "workspace:*"
   }
 }

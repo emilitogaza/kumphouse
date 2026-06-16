@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseRouteReport } from 'kumphouse-core'
 
 const props = defineProps<{
   routeName: string

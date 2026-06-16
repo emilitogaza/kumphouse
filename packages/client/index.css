@@ -11,17 +11,18 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 
-  /* Custom colors from UnoCSS config */
-  --color-teal-50: #f7f9f9;
-  --color-teal-100: #eaf1f5;
-  --color-teal-200: #d0e0e9;
-  --color-teal-300: #a2c0cc;
-  --color-teal-400: #6c99a8;
-  --color-teal-500: #517784;
-  --color-teal-600: #415c66;
-  --color-teal-700: #33454d;
-  --color-teal-800: #232e36;
-  --color-teal-900: #151c23;
+  /* Purple brand scale — drives accent and neutral surfaces */
+  --color-purple-50: hsl(264, 56%, 96%);
+  --color-purple-100: hsl(266, 51%, 92%);
+  --color-purple-200: hsl(266, 46%, 84%);
+  --color-purple-300: hsl(266, 48%, 70%);
+  --color-purple-400: hsl(266, 50%, 55%);
+  --color-purple-500: hsl(266, 74%, 30%);
+  --color-purple-600: hsl(266, 78%, 25%);
+  --color-purple-700: hsl(266, 69%, 19%);
+  --color-purple-800: hsl(266, 64%, 20%);
+  --color-purple-900: hsl(266, 61%, 15%);
+  --color-purple-950: hsl(268, 57%, 5%);
 
   /* Custom fonts from UnoCSS config */
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
@@ -62,7 +63,7 @@
   }
 
   .text-info {
-    @apply text-blue-700 dark:text-blue-500;
+    @apply text-purple-700 dark:text-purple-400;
   }
 
   .bg-success {
@@ -88,11 +89,11 @@
 
   /* Background surfaces */
   .bg-surface {
-    @apply bg-blue-50 dark:bg-teal-700/30;
+    @apply bg-purple-50 dark:bg-purple-700/30;
   }
 
   .bg-panel {
-    @apply bg-blue-50 dark:bg-blue-900/20;
+    @apply bg-purple-50 dark:bg-purple-900/20;
   }
 
   /* Interactive states - High Impact */
@@ -101,11 +102,11 @@
   }
 
   .btn-hover-primary {
-    @apply hover:bg-blue-500 transition;
+    @apply hover:bg-purple-500 transition;
   }
 
   .btn-hover-light {
-    @apply hover:bg-blue-200 transition;
+    @apply hover:bg-purple-200 transition;
   }
 
   /* Chip/Badge patterns - Medium Impact */
@@ -142,6 +143,6 @@
 
   /* Unstyled button for accessibility */
   .btn-unstyled {
-    @apply bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded;
+    @apply bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-500/50 rounded;
   }
 }

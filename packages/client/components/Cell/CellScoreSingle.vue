@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseColumn, KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseColumn, KumphouseRouteReport } from 'kumphouse-core'
 import { activeTab, openLighthouseReportIframeModal, throttle, website } from '../../logic'
 
 const props = defineProps<{
@@ -29,7 +29,7 @@ const isLocalhost = website.includes('localhost')
   <loading-status-icon v-if="!category" :status="report.tasks.runLighthouseTask" />
   <div v-else>
     <button
-      class="hover:bg-blue-900/50 transition lg:p-2 rounded"
+      class="hover:bg-purple-900/50 transition lg:p-2 rounded"
       title="Open Lighthouse Report"
       @click="openLighthouseReportIframeModal(report, category.key)"
     >

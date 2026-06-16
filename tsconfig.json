@@ -15,13 +15,13 @@
     "moduleResolution": "Bundler",
     "paths": {
       "kumphouse": ["./packages/kumphouse/src"],
-      "@kumphouse/client": ["./packages/client/src"],
-      "@kumphouse/cli": ["./packages/cli/src"],
-      "@kumphouse/core": ["./packages/core/src"],
-      "@kumphouse/server": ["./packages/server/src"],
-      "@kumphouse/nuxt": ["./integrations/nuxt/src"],
-      "@kumphouse/vite": ["./integrations/vite/src"],
-      "@kumphouse/webpack": ["./integrations/webpack/src"]
+      "kumphouse-client": ["./packages/client/src"],
+      "kumphouse-cli": ["./packages/cli/src"],
+      "kumphouse-core": ["./packages/core/src"],
+      "kumphouse-server": ["./packages/server/src"],
+      "kumphouse-nuxt": ["./integrations/nuxt/src"],
+      "kumphouse-vite": ["./integrations/vite/src"],
+      "kumphouse-webpack": ["./integrations/webpack/src"]
     },
     "resolveJsonModule": true,
     "types": [],

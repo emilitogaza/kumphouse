@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { KumphouseColumn, KumphouseRouteReport } from '@kumphouse/core/src'
+import type { KumphouseColumn, KumphouseRouteReport } from 'kumphouse-core/src'
 import { resolveArtifactPath } from '../../logic'
 
 const props = defineProps<{

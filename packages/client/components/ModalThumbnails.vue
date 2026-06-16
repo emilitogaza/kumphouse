@@ -185,7 +185,7 @@ onUnmounted(() => {
               class="flex-shrink-0 border-2 rounded transition-all duration-200"
               :class="[
                 currentFrame === index
-                  ? 'border-blue-500 ring-2 ring-blue-200 dark:ring-blue-800'
+                  ? 'border-purple-500 ring-2 ring-purple-200 dark:ring-purple-800'
                   : 'border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500',
               ]"
               :title="`Frame ${index + 1} - ${index * 300}ms`"

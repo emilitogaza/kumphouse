@@ -1,9 +1,9 @@
-import type { UserConfig } from '@kumphouse/core'
+import type { UserConfig } from 'kumphouse-core'
 import type { ReporterConfig } from './reporters/types'
 import type { CiOptions } from './types'
 import { setMaxListeners } from 'node:events'
 import { rm } from 'node:fs/promises'
-import { createKumphouse, generateClient, useLogger, useKumphouse } from '@kumphouse/core'
+import { createKumphouse, generateClient, useLogger, useKumphouse } from 'kumphouse-core'
 import { relative } from 'pathe'
 import { isCI } from 'std-env'
 import createCli from './createCli'
@@ -24,7 +24,11 @@ async function run() {
   cli.option('--lhci-build-token <lhci-build-token>', 'LHCI build token, used to add data.')
   cli.option('--lhci-auth <lhci-auth>', 'Basic auth for your LHCI server.')
 
-  const { options } = cli.parse() as unknown as { options: CiOptions }
+  const { args, options } = cli.parse() as unknown as { args: string[], options: CiOptions }
+
+  // Allow the site to be passed as a positional arg: `kumphouse-ci kumpan.se`
+  if (!options.site && args[0])
+    options.site = args[0]
 
   if (options.help || options.version)
     return

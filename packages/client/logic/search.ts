@@ -1,4 +1,4 @@
-import type { KumphouseRouteReport, KumphouseTaskStatus } from '@kumphouse/core'
+import type { KumphouseRouteReport, KumphouseTaskStatus } from 'kumphouse-core'
 import { useStorage } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { get, orderBy } from 'lodash-es'

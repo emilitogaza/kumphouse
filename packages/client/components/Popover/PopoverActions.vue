@@ -7,17 +7,17 @@ defineProps<{
 <template>
   <Popover v-slot="{ open, close }" class="relative flex items-center justify-end">
     <PopoverButton
-      :class="open ? 'bg-teal-100 ring-2' : ''"
+      :class="open ? 'bg-purple-100 ring-2' : ''"
       :title="open ? 'Close Actions' : 'Open Actions'"
       :aria-expanded="open"
       aria-haspopup="menu"
       aria-label="Open actions menu"
-      class="interactive-base justify-center text-white group bg-surface dark:hover:bg-teal-700/70 hover:text-white hover:bg-blue-100 btn-focus cursor-pointer"
+      class="interactive-base justify-center text-white group bg-surface dark:hover:bg-purple-700/70 hover:text-white hover:bg-purple-100 btn-focus cursor-pointer"
     >
       <UIcon
         name="i-mdi-dots-horizontal"
         :class="open ? 'rotate-270 scale-125' : ''"
-        class="w-5 h-5 text-teal-800 dark:text-teal-300 transform transition duration-500 ease-in-out group-hover:text-teal-800/80"
+        class="w-5 h-5 text-purple-800 dark:text-purple-300 transform transition duration-500 ease-in-out group-hover:text-purple-800/80"
         aria-hidden="true"
       />
     </PopoverButton>
@@ -37,7 +37,7 @@ defineProps<{
         <div
           class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5"
         >
-          <div class="relative p-2 bg-teal-50/90 dark:bg-teal-900/99 dark:text-gray-100 text-gray-800">
+          <div class="relative p-2 bg-purple-50/90 dark:bg-purple-900/99 dark:text-gray-100 text-gray-800">
             <slot :open="open" :close="close" />
           </div>
         </div>

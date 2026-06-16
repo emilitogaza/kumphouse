@@ -7,8 +7,9 @@ export default function createCli() {
   cli
     .help()
     .version(version)
+    .example('kumphouse kumpan.se')
     .example('kumphouse --site kumpan.se')
-    .example('kumphouse --site kumpan.se --urls /tjanster,/case,/kontakt --desktop')
+    .example('kumphouse kumpan.se --urls /tjanster,/case,/kontakt --desktop')
 
   cli.option('--root <root>', 'Define the project root. Useful for changing where the config is read from or setting up sampling.')
   cli.option('--config-file <config-file>', 'Path to config file.')

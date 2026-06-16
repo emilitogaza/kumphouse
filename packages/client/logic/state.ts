@@ -1,4 +1,4 @@
-import type { NormalisedRoute, ScanMeta, KumphouseRouteReport } from '@kumphouse/core'
+import type { NormalisedRoute, ScanMeta, KumphouseRouteReport } from 'kumphouse-core'
 import { computed, reactive } from 'vue'
 import CellRouteName from '../components/Cell/CellRouteName.vue'
 import CellScoreSingle from '../components/Cell/CellScoreSingle.vue'

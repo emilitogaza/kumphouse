@@ -249,15 +249,6 @@ importers:
 
   packages/cli:
     dependencies:
-      '@kumphouse/client':
-        specifier: workspace:*
-        version: link:../client
-      '@kumphouse/core':
-        specifier: workspace:*
-        version: link:../core
-      '@kumphouse/server':
-        specifier: workspace:*
-        version: link:../server
       '@lhci/utils':
         specifier: catalog:dependencies
         version: 0.15.1
@@ -270,6 +261,15 @@ importers:
       defu:
         specifier: catalog:dependencies
         version: 6.1.7
+      kumphouse-client:
+        specifier: workspace:*
+        version: link:../client
+      kumphouse-core:
+        specifier: workspace:*
+        version: link:../core
+      kumphouse-server:
+        specifier: workspace:*
+        version: link:../server
       lodash-es:
         specifier: catalog:dependencies
         version: 4.18.1
@@ -334,9 +334,6 @@ importers:
       '@iconify-json/simple-line-icons':
         specifier: catalog:dependencies
         version: 1.2.1
-      '@kumphouse/core':
-        specifier: workspace:*
-        version: link:../core
       '@types/three':
         specifier: 'catalog:'
         version: 0.183.1
@@ -352,6 +349,9 @@ importers:
       '@vueuse/router':
         specifier: catalog:dependencies
         version: 14.2.1(vue-router@4.5.1(vue@3.5.32(typescript@6.0.2)))(vue@3.5.32(typescript@6.0.2))
+      kumphouse-core:
+        specifier: workspace:*
+        version: link:../core
       tailwindcss:
         specifier: catalog:dependencies
         version: 4.2.2
@@ -403,6 +403,9 @@ importers:
       hookable:
         specifier: catalog:dependencies
         version: 6.1.0
+      kumphouse-client:
+        specifier: workspace:*
+        version: link:../client
       launch-editor:
         specifier: catalog:dependencies
         version: 2.13.2
@@ -467,36 +470,36 @@ importers:
 
   packages/kumphouse:
     dependencies:
-      '@kumphouse/cli':
+      kumphouse-cli:
         specifier: workspace:*
         version: link:../cli
-      '@kumphouse/client':
+      kumphouse-client:
         specifier: workspace:*
         version: link:../client
-      '@kumphouse/core':
+      kumphouse-core:
         specifier: workspace:*
         version: link:../core
 
   packages/kumphouse-ci:
     dependencies:
-      '@kumphouse/cli':
+      kumphouse-cli:
         specifier: workspace:*
         version: link:../cli
-      '@kumphouse/client':
+      kumphouse-client:
         specifier: workspace:*
         version: link:../client
-      '@kumphouse/core':
+      kumphouse-core:
         specifier: workspace:*
         version: link:../core
 
   packages/server:
     dependencies:
-      '@kumphouse/core':
-        specifier: workspace:*
-        version: link:../core
       h3:
         specifier: catalog:dependencies
         version: 1.15.11
+      kumphouse-core:
+        specifier: workspace:*
+        version: link:../core
       listhen:
         specifier: catalog:dependencies
         version: 1.9.1

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { LighthouseAudit } from '@kumphouse/core'
+import type { LighthouseAudit } from 'kumphouse-core'
 
 defineProps<{
   audit: LighthouseAudit

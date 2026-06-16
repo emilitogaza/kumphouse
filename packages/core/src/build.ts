@@ -13,7 +13,7 @@ import { createScanMeta } from './data/scanMeta'
 import { useLogger, useKumphouse } from './kumphouse'
 
 /**
- * Copies the file contents of the @kumphouse/client package and does transformation based on the provided configuration.
+ * Copies the file contents of the kumphouse-client package and does transformation based on the provided configuration.
  *
  * The main transformation is injecting the kumphouse configuration into the head of the document, making it accessible
  * to the client.

@@ -1,7 +1,7 @@
 {
   "name": "kumphouse-ci",
   "type": "module",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "Delightfully scan your entire website with Google Lighthouse. Navigate your performance, accessibility and SEO.",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
@@ -55,8 +55,8 @@
     }
   },
   "dependencies": {
-    "@kumphouse/cli": "workspace:*",
-    "@kumphouse/client": "workspace:*",
-    "@kumphouse/core": "workspace:*"
+    "kumphouse-cli": "workspace:*",
+    "kumphouse-client": "workspace:*",
+    "kumphouse-core": "workspace:*"
   }
 }

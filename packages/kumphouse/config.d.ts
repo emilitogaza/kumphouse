@@ -1,4 +1,4 @@
-import type { UserConfig } from '@kumphouse/core'
+import type { UserConfig } from 'kumphouse-core'
 import type { ConfigLayerMeta, DefineConfig } from 'c12'
 
 export { UserConfig } from 'nuxt/schema'

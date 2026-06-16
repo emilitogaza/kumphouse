@@ -56,7 +56,7 @@ export interface ComputedLighthouseReportAudit {
 }
 /**
  * An augmented Lighthouse Report type, we add custom types to the base report for specific functionality on the
- * @kumphouse/client.
+ * kumphouse-client.
  */
 export type LighthouseReport = Partial<Result> & {
   /**
@@ -694,7 +694,7 @@ export interface KumphouseHooks {
    */
   'route-definitions-provided': (routeDefinitions: any[]) => HookResult
   /**
-   * Called when a user visits the path of the @kumphouse/client for the first time. Useful for starting the worker on-demand.
+   * Called when a user visits the path of the kumphouse-client for the first time. Useful for starting the worker on-demand.
    */
   'visited-client': () => HookResult
   /**

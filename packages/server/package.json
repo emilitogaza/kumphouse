@@ -1,7 +1,7 @@
 {
-  "name": "@kumphouse/server",
+  "name": "kumphouse-server",
   "type": "module",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "Server for Kumphouse",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
@@ -40,7 +40,7 @@
     "stub": "obuild --stub"
   },
   "dependencies": {
-    "@kumphouse/core": "workspace:*",
+    "kumphouse-core": "workspace:*",
     "h3": "catalog:dependencies",
     "listhen": "catalog:dependencies"
   }

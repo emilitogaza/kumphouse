@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-import '@kumphouse/cli/ci'
+import 'kumphouse-cli/ci'

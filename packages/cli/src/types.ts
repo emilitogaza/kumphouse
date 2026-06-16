@@ -1,4 +1,4 @@
-import type { KumphouseRouteReport, ValidReportTypes } from '@kumphouse/core'
+import type { KumphouseRouteReport, ValidReportTypes } from 'kumphouse-core'
 
 export interface CliOptions {
   host?: string

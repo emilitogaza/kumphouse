@@ -184,7 +184,7 @@ function onTabKeydown(e: KeyboardEvent, key: number) {
                     </template>
                   </tooltip>
                 </span>
-                <metric-guage v-if="shouldShowCategoryScore(category, key)" :score="categoryScores[key - 1]" :stripped="true" class="dark:font-bold" :class="activeTab === key ? ['dark:bg-teal-900 bg-blue-100 rounded px-2'] : []" />
+                <metric-guage v-if="shouldShowCategoryScore(category, key)" :score="categoryScores[key - 1]" :stripped="true" class="dark:font-bold" :class="activeTab === key ? ['dark:bg-purple-900 bg-purple-100 rounded px-2'] : []" />
               </btn-tab>
             </div>
             <div v-if="dynamicSampling" class="text-sm opacity-70 mt-3">
@@ -337,7 +337,7 @@ function onTabKeydown(e: KeyboardEvent, key: number) {
                   <p class="mb-2">
                     No results for search "{{ searchText }}"...
                   </p>
-                  <btn-action class="dark:bg-teal-700 bg-blue-100 px-2 text-sm" @click="searchText = ''">
+                  <btn-action class="dark:bg-purple-700 bg-purple-100 px-2 text-sm" @click="searchText = ''">
                     Reset Search
                   </btn-action>
                 </template>
@@ -356,13 +356,13 @@ function onTabKeydown(e: KeyboardEvent, key: number) {
                   </div>
                 </template>
                 <template v-else-if="isStatic && (!(window as any).__kumphouse_payload?.reports || (window as any).__kumphouse_payload.reports.length === 0)">
-                  <div class="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                    <UIcon name="i-carbon-information" class="text-blue-600 dark:text-blue-400 text-xl" />
+                  <div class="flex items-center space-x-3 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+                    <UIcon name="i-carbon-information" class="text-purple-600 dark:text-purple-400 text-xl" />
                     <div>
-                      <p class="font-medium text-blue-800 dark:text-blue-200">
+                      <p class="font-medium text-purple-800 dark:text-purple-200">
                         No Report Data
                       </p>
-                      <p class="text-sm text-blue-700 dark:text-blue-300 mt-1">
+                      <p class="text-sm text-purple-700 dark:text-purple-300 mt-1">
                         This is a static client build with no report data.
                         Generate reports using the Kumphouse CLI to see lighthouse results here.
                       </p>
@@ -415,7 +415,7 @@ function onTabKeydown(e: KeyboardEvent, key: number) {
               <div class="text-center max-w-md">
                 <div class="mb-6">
                   <template v-if="isStatic">
-                    <UIcon name="i-carbon-information" class="text-blue-500 text-4xl mx-auto mb-4" />
+                    <UIcon name="i-carbon-information" class="text-purple-500 text-4xl mx-auto mb-4" />
                     <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                       No Report Data Available
                     </h3>

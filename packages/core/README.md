@@ -1,4 +1,4 @@
-# @kumphouse/core
+# kumphouse-core
 
 The core engine of [Kumphouse](https://github.com/harlan-zw/unlighthouse) that handles website scanning, Lighthouse execution, and report generation.
 
@@ -7,7 +7,7 @@ The core engine of [Kumphouse](https://github.com/harlan-zw/unlighthouse) that h
 ### Basic Usage
 
 ```ts
-import { createKumphouse } from '@kumphouse/core'
+import { createKumphouse } from 'kumphouse-core'
 
 const kumphouse = await createKumphouse({
   site: 'https://example.com',
@@ -23,7 +23,7 @@ await kumphouse.start()
 ### With Custom Provider
 
 ```ts
-import { createKumphouse } from '@kumphouse/core'
+import { createKumphouse } from 'kumphouse-core'
 
 const kumphouse = await createKumphouse(
   { /* user config */ },
@@ -37,7 +37,7 @@ const kumphouse = await createKumphouse(
 ### Hooks
 
 ```ts
-import { useKumphouse } from '@kumphouse/core'
+import { useKumphouse } from 'kumphouse-core'
 
 const { hooks } = useKumphouse()
 

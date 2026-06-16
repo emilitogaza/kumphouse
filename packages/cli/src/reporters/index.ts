@@ -1,4 +1,4 @@
-import type { ResolvedUserConfig, KumphouseRouteReport } from '@kumphouse/core'
+import type { ResolvedUserConfig, KumphouseRouteReport } from 'kumphouse-core'
 import type { ReporterConfig, ReportJsonExpanded, ReportJsonSimple } from './types'
 import { writeFile } from 'node:fs/promises'
 import { join } from 'node:path'

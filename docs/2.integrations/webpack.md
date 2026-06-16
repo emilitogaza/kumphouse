@@ -29,15 +29,15 @@ Lighthouse auditing for webpack-based applications during development.
 ::code-group
 
 ```bash [yarn]
-yarn add -D @kumphouse/webpack
+yarn add -D kumphouse-webpack
 ```
 
 ```bash [npm]
-npm install -D @kumphouse/webpack
+npm install -D kumphouse-webpack
 ```
 
 ```bash [pnpm]
-pnpm add -D @kumphouse/webpack
+pnpm add -D kumphouse-webpack
 ```
 
 ::
@@ -61,7 +61,7 @@ start.
 ### webpack.config.js example
 
 ```js webpack.config.js
-import Kumphouse from '@kumphouse/webpack'
+import Kumphouse from 'kumphouse-webpack'
 
 export default {
   // ...
@@ -76,7 +76,7 @@ export default {
 ### CJS example
 
 ```js webpack.config.js
-const Kumphouse = require('@kumphouse/webpack')
+const Kumphouse = require('kumphouse-webpack')
 
 export default {
   // ...
@@ -96,7 +96,7 @@ in the root directory.
 ### Example
 
 ```js webpack.config.ts
-import Kumphouse from '@kumphouse/webpack'
+import Kumphouse from 'kumphouse-webpack'
 
 export default {
   // ...

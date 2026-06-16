@@ -6,7 +6,7 @@ const r = (p: string) => resolve(__dirname, p)
 
 export const alias: AliasOptions = {
   'kumphouse': r('./packages/core/src/'),
-  '@kumphouse/client': r('./packages/client/src/'),
+  'kumphouse-client': r('./packages/client/src/'),
 }
 
 export default defineConfig({

@@ -1,4 +1,4 @@
-import type { KumphouseRouteReport } from '@kumphouse/core/src'
+import type { KumphouseRouteReport } from 'kumphouse-core/src'
 import type { CategoryAverageScore, CategoryScore, ExpandedRouteReport, MetricAverageScore, MetricScore, ReportJsonExpanded } from './types'
 
 const relevantMetrics = [

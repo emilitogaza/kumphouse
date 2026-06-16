@@ -44,15 +44,15 @@ Install the CLI globally to use `kumphouse-ci`:
 ::code-group
 
 ```bash [npm]
-npm install -g @kumphouse/cli
+npm install -g kumphouse-cli
 ```
 
 ```bash [yarn]
-yarn global add @kumphouse/cli
+yarn global add kumphouse-cli
 ```
 
 ```bash [pnpm]
-pnpm install -g @kumphouse/cli
+pnpm install -g kumphouse-cli
 ```
 
 ::
@@ -115,7 +115,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Dependencies
-        run: npm add -g @kumphouse/cli puppeteer
+        run: npm add -g kumphouse-cli puppeteer
 
       - name: Kumphouse assertions and client
         run: kumphouse-ci --site <your-site> --build-static

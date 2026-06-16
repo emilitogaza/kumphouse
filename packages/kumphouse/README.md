@@ -15,9 +15,9 @@ npx kumphouse-ci --site https://example.com --budget 80
 ## What's Included
 
 This package includes:
-- `@kumphouse/core` - Core scanning engine
-- `@kumphouse/cli` - Command-line interface
-- `@kumphouse/client` - Web interface for results
+- `kumphouse-core` - Core scanning engine
+- `kumphouse-cli` - Command-line interface
+- `kumphouse-client` - Web interface for results
 - Two binaries: `kumphouse` and `kumphouse-ci`
 
 ## Installation

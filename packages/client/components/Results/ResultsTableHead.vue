@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseColumn } from '@kumphouse/core'
+import type { KumphouseColumn } from 'kumphouse-core'
 
 defineProps<{
   sorting: Record<string, 'desc' | 'asc' | undefined>
@@ -39,8 +39,8 @@ function htmlTooltip(s: string) {
       </div>
       <button
         v-if="(column.sortable || !!column.sortKey) && column.key"
-        class="ml-2 p-0.3 dark:border-none dark:bg-blue-900/20 border-2 border-blue-100 ring-blue-200 hover:ring-1 rounded-lg"
-        :class="sorting.key === column.key && sorting.dir ? ['dark:bg-blue-900/70', 'bg-blue-900', 'text-blue-200'] : []"
+        class="ml-2 p-0.3 dark:border-none dark:bg-purple-900/20 border-2 border-purple-100 ring-purple-200 hover:ring-1 rounded-lg"
+        :class="sorting.key === column.key && sorting.dir ? ['dark:bg-purple-900/70', 'bg-purple-900', 'text-purple-200'] : []"
         @click="$emit('sort', column.key)"
       >
         <UIcon v-if="sorting.key !== column.key || !sorting.dir" name="i-carbon-chevron-sort" />

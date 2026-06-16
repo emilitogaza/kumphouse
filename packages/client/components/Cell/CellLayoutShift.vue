@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { KumphouseColumn, KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseColumn, KumphouseRouteReport } from 'kumphouse-core'
 import { contentModalOpen, openContentModal } from '../../logic'
 import CellImageOutline from './CellImageOutline.vue'
 

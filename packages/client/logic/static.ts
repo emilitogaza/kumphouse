@@ -1,4 +1,4 @@
-import type { KumphouseRouteReport } from '@kumphouse/core'
+import type { KumphouseRouteReport } from 'kumphouse-core'
 import { $URL, joinURL } from 'ufo'
 import CellColorContrast from '../components/Cell/CellColorContrast.vue'
 import CellImage from '../components/Cell/CellImage.vue'

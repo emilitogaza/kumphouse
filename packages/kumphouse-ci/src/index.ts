@@ -1,1 +1,1 @@
-export * from '@kumphouse/core'
+export * from 'kumphouse-core'
