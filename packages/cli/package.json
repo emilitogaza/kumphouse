@@ -1,7 +1,7 @@
 {
   "name": "kumphouse-cli",
   "type": "module",
-  "version": "0.17.10",
+  "version": "0.17.11",
   "description": "CLI for Kumphouse",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",

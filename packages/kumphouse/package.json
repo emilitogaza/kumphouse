@@ -1,7 +1,7 @@
 {
   "name": "kumphouse",
   "type": "module",
-  "version": "0.17.10",
+  "version": "0.17.11",
   "description": "Kumphouse \u2014 Kumpan's playful, in-house Lighthouse sweeper. Scan your entire site for performance, accessibility and SEO problems worth solving.",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",

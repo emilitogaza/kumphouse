@@ -1,7 +1,7 @@
 {
   "name": "kumphouse-core",
   "type": "module",
-  "version": "0.17.10",
+  "version": "0.17.11",
   "description": "Scan your entire website with Google Lighthouse.",
   "license": "MIT",
   "homepage": "https://github.com/harlan-zw/unlighthouse#readme",
